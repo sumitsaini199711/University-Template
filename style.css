@@ -30,6 +30,14 @@ nav ul {
   text-align: right;
 }
 
+nav ul .fas{
+  display: none;
+}
+
+nav .fas{
+  display: none;
+}
+
 nav ul li {
   list-style: none;
   display: inline-block;
@@ -93,4 +101,42 @@ nav ul li:hover::after{
   border: 1px solid #f44336;
   background: #f44336;
   transition: 1s;
+}
+
+@media(max-width:700px){
+  .text-box h1{
+    font-size: 20px;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  nav ul{
+    position: absolute;
+    background: #f44336;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    z-index: 2;
+    text-align: left;
+    transition: 1s;
+  }
+
+  nav ul .fas{
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  nav .fas{
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
 }
