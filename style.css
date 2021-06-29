@@ -185,4 +185,8 @@ h3{
     font-size: 22px;
     cursor: pointer;
   }
+
+  .row{
+    flex-direction: column;
+  }
 }
